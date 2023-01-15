@@ -1,0 +1,11 @@
+.wj-blocks.wj-block-spacer {
+	height: var(--size-default);
+
+	@media(max-width: 991px) {
+		height: var(--size-tablet);
+	}
+
+	@media(max-width: 767px) {
+		height: var(--size-mobile);
+	}
+}

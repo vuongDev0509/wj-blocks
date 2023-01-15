@@ -1,0 +1,117 @@
+/**
+Editor style
+*/
+@import "../core-button/editor.scss";
+.block-editor-block-list__block{
+	> .nf-iframe-container{
+		> .nf-iframe-overlay{
+			> iframe{
+				width: 100%;
+			}
+		}
+	}
+}
+.block-editor-default-block-appender .block-editor-inserter__toggle.components-button.has-icon {
+	background-color: $white;
+}
+.is-root-container {
+	overflow: hidden;
+
+	.wp-block {
+		max-width: 1135px;
+	}
+
+	.wp-block[data-align="left"],
+	.wp-block[data-align="right"] {
+		height: auto;
+	}
+
+	.wp-block[data-align="full"] {
+		max-width: none;
+	}
+
+	p,
+	span,
+	a {
+		font-family: $font_primary;
+	}
+}
+
+.is-root-container.edit-widgets-main-block-list {
+	.wp-block {
+		max-width: 700px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.editor-styles-wrapper .container-xl,
+	.editor-styles-wrapper .container-lg,
+	.editor-styles-wrapper .container-md,
+	.editor-styles-wrapper .container-sm,
+	.editor-styles-wrapper .container {
+		max-width: 1135px;
+		width: 100%;
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+html :where(.wp-block) {
+	margin-top: 28px;
+	margin-bottom: 28px;
+}
+
+.block-editor-block-list__block .block-list-appender {
+	position: relative;
+}
+
+.editor-styles-wrapper {
+	.block-editor-block-list__layout {
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: $font_primary;
+			font-weight: 700;
+		}
+
+		h1 {
+			line-height: 1.54;
+			font-size: 4.375em;
+		}
+
+		h2,
+		.h2 {
+			line-height: 1.2;
+			font-size: 2.5em;
+		}
+
+		h3,
+		.h3 {
+			line-height: 1.4;
+			font-size: 2em;
+		}
+
+		h4,
+		.h4 {
+			line-height: (36/24);
+			font-size: 1.5em;
+		}
+
+		h5,
+		.h5 {
+			line-height: 1.2;
+			font-size: 1.25em;
+		}
+
+		h6,
+		.h6 {
+			line-height: 1.2;
+			font-size: 1.125em;
+		}
+	}
+}

@@ -1,0 +1,181 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+ .block-antero-list-core-values{
+	 &.block-editor{
+		.inner-wrap {
+			.qa-item {
+				padding: 23px 10px;
+			}
+		}
+	}
+	&:not(.is-style-layout-2){
+		&:not(:last-child){
+			margin-bottom: 20px;
+		}
+	}
+	.inner-wrap {
+		.qa-item {
+			border: 1px solid rgba(0, 0, 0, 0.16);
+			border-radius: 20px;
+			padding: 24px 34px 26px 24px;
+			transition: all 0.4s;
+			position: relative;
+			&::before{
+				content: " ";
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+				background-color: transparent;
+				border: 2px solid transparent;
+				position: absolute;
+				left: 0;
+				top:0;
+				opacity: 0;
+				border-radius: 20px;
+			}
+			&:hover, &.qa-item-open{
+				border-color: transparent;
+				&::before{
+					opacity: 1;
+					border-color: $white;
+				}
+			}
+			@media (max-width: 767px){
+				padding: 24px 32px 24px 24px;
+			}
+			.qa-question {
+				position: relative;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				cursor: pointer;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 20px;
+				line-height: 28px;
+				color: #4C1C32;
+				h3{
+					font-style: normal;
+					font-weight: 500;
+					font-size: 20px;
+					line-height: 28px;
+					color: #4C1C32;
+					width: 100%;
+					margin: 0;
+					padding: 0;
+					padding-right: 20px;
+					transition: font-weight .4s ease-in-out;
+					@media only screen and (max-width: 767px) {
+						font-size: 18px;
+					}
+				}
+			}
+			&-icon{
+				position: relative;
+				display: inline-block;
+				height: 24px;
+				width: 24px;
+				transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+				&:after{
+					content: "";
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: contain;
+					position: absolute;
+					width: 15px;
+					height: 9px;
+					display: inline-block;
+					transition: all 0.4s;
+					right: 0;
+				}
+				&:after {	
+					top: 50%;
+					transform: translateY(-50%);
+					opacity: 1;
+					background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACwSURBVHgBrU67DoIwFC24s6oJMUzMFX+gowMmfop+AfAF/ow7ujk642oiM+69trRUHrewcJLb5J57zukhZA7E/i6P/QjEpFPawyY6Ke02l7uraGD6noyFyBtwclGbw0wAAD+3dGiI5pI/w2vNQj6vb/kIvaVJFWCht3aK6nOzma/vZ1b36P5ChchNW1TWtMLMpkGDoirv/SZ6UPMgwBJiNaMBeAhunsR+RYNjQOmY5ge6FUc8gpGsPQAAAABJRU5ErkJggg==);
+				}
+			}
+			.qa-answer {
+				padding-top: 33px;
+				display: none;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 156%;
+				color: #823C58;
+				.wp-block-columns{
+					margin-bottom: 0 !important;
+				}
+			}
+
+			.qa-open{
+				margin-top: 20px !important;
+				display: inline-block;
+				margin-bottom: 30px;
+			}
+
+			&-open {
+				.qa-question {
+					h3{
+						// font-weight: 800;
+					}
+					.qa-item-icon{
+						&:after {
+							transform: translateY(-50%) rotate(180deg);
+						}
+					}
+				}
+				.qa-answer {
+					display: block;
+				}
+			}
+		}
+	}
+
+	&.block-editor {
+		.inner-wrap .qa-item .qa-answer {
+			display: block;
+		}
+	}
+
+	&.is-style-layout-2{
+		.qa-item{
+			
+		}
+		.inner-wrap .qa-item{
+			border-radius: 0;
+			border-top: none;
+			border-right: none;
+			border-left: none;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+			padding: 24px 0;
+			.qa-question{
+				h3{
+					font-weight: 800;
+					font-size: 24px;
+					line-height: 133%;
+					color: #4C1C32;
+					@media only screen and (max-width: 767px) {
+						font-size: 18px;
+					}
+				}
+			}
+			
+			.qa-answer{
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 158%;
+				color: #000000;
+				padding-top: 36px;
+			}
+		}
+	}
+}
+
+.block-antero-list-core-values.is-style-layout-2 .inner-wrap .qa-item::before{
+	content: none;
+}

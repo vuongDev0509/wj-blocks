@@ -1,0 +1,22 @@
+.wp-block-antero-blocks-hero-carousel {
+	@media (min-width: 782px) {
+		width: calc(100vw - 350px);
+		margin-left: calc((100% - calc(100vw - 350px)) / 2);
+		transform: none;
+	}
+
+	.block-editor-block-list__layout{
+		>div{
+			&:first-child{
+				margin-top: 0;
+			}
+			&:last-child{
+				margin-bottom: 0; 
+			}
+		}
+		.block-list-appender.wp-block{
+			position: relative;
+			margin: 0 auto;
+		}
+	}
+}

@@ -1,0 +1,86 @@
+.wp-block-button {
+
+	&.is-style-fill {
+		.wp-block-button__link {
+			padding: 11px 25px 9px;
+			border-radius: 999px;
+			background-color: $secondary;
+			color: $primary;
+			font-size: 16px;
+			line-height: 1.75;
+			&:hover{
+				opacity: 0.8;
+			}
+		}
+	}
+
+	&.is-style-outline {
+		.wp-block-button__link {
+			padding: 9px 25px 7px;
+			border-radius: 999px;
+			font-size: 16px;
+			line-height: 1.75;
+			&:hover{
+				opacity: 0.8;
+			}
+		}
+	}
+
+	.wp-block-button__link {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 30px;
+		overflow: hidden;
+		letter-spacing: 0.2em;
+		color: $secondary;
+		background-color: transparent;
+		padding: 0;
+		position: relative;
+		transition: $transition-base;
+		transition-delay: .15s;
+		
+		&::after {
+			content: '→';
+			position: relative;
+			display: inline-block;
+			margin-left: 5px;
+			top: -1px;
+			transition: $transition-base;
+		}
+
+		&.has-white-colour-color {
+			color: $white;
+		}
+
+		&.has-black-colour-color {
+			color: $black;
+		}
+
+		&.has-primary-colour-color {
+			color: $primary;
+		}
+
+		&.has-secondary-colour-color {
+			color: $secondary;
+		}
+
+		&.has-white-colour-background-color {
+			background-color: $white;
+		}
+
+		&.has-black-colour-background-color {
+			background-color: $black;
+		}
+
+		&.has-primary-colour-background-color {
+			background-color: $primary;
+		}
+
+		&.has-secondary-colour-background-color {
+			background-color: $secondary;
+		}
+	}
+
+
+}

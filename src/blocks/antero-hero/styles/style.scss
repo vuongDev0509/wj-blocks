@@ -1,0 +1,11 @@
+.antero-hero-block {
+	width: 100vw;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	position: relative;
+	overflow: hidden;
+	&-inner {
+		
+	}
+}
