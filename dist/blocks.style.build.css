@@ -4,6 +4,10 @@
  * Can include things like variables and mixins
  * that are used across the project.
 */
+.container {
+  margin-left: auto;
+  margin-right: auto; }
+
 .entry-content .alignfull {
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
@@ -109,6 +113,10 @@ body .wp-block-gallery.wjstg-gallery-incept {
  * Can include things like variables and mixins
  * that are used across the project.
 */
+.container {
+  margin-left: auto;
+  margin-right: auto; }
+
 .entry-content .alignfull {
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
@@ -144,6 +152,10 @@ body .wp-block-gallery.wjstg-gallery-incept {
  * Can include things like variables and mixins
  * that are used across the project.
 */
+.container {
+  margin-left: auto;
+  margin-right: auto; }
+
 .entry-content .alignfull {
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
@@ -191,6 +203,10 @@ body .wp-block-gallery.wjstg-gallery-incept {
  * Can include things like variables and mixins
  * that are used across the project.
 */
+.container {
+  margin-left: auto;
+  margin-right: auto; }
+
 .entry-content .alignfull {
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
@@ -282,6 +298,10 @@ body .wp-block-gallery.wjstg-gallery-incept {
  * Can include things like variables and mixins
  * that are used across the project.
 */
+.container {
+  margin-left: auto;
+  margin-right: auto; }
+
 .entry-content .alignfull {
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
@@ -343,6 +363,10 @@ div.wp-block-image:not(.block-editor-block-list__block) {
  * Can include things like variables and mixins
  * that are used across the project.
 */
+.container {
+  margin-left: auto;
+  margin-right: auto; }
+
 .entry-content .alignfull {
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
@@ -362,6 +386,10 @@ div.wp-block-image:not(.block-editor-block-list__block) {
  * Can include things like variables and mixins
  * that are used across the project.
 */
+.container {
+  margin-left: auto;
+  margin-right: auto; }
+
 .entry-content .alignfull {
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
@@ -376,7 +404,8 @@ div.wp-block-image:not(.block-editor-block-list__block) {
   position: relative;
   overflow: hidden;
   padding-top: var(--paddingTop);
-  padding-bottom: var(--paddingBottom); }
+  padding-bottom: var(--paddingBottom);
+  max-width: 100% !important; }
   @media (max-width: 991.98px) {
     .wj-block-container {
       padding-top: var(--paddingTopTablet);
@@ -459,6 +488,10 @@ div.wp-block-image:not(.block-editor-block-list__block) {
  * Can include things like variables and mixins
  * that are used across the project.
 */
+.container {
+  margin-left: auto;
+  margin-right: auto; }
+
 .entry-content .alignfull {
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
@@ -502,6 +535,10 @@ div.wp-block-image:not(.block-editor-block-list__block) {
  * Can include things like variables and mixins
  * that are used across the project.
 */
+.container {
+  margin-left: auto;
+  margin-right: auto; }
+
 .entry-content .alignfull {
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
@@ -520,3 +557,39 @@ div.wp-block-image:not(.block-editor-block-list__block) {
   .wj-icon-text-block-inner {
     border: 2px solid #fff;
     padding: 40px; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.container {
+  margin-left: auto;
+  margin-right: auto; }
+
+.entry-content .alignfull {
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  max-width: 100vw; }
+
+.wj-hero-block {
+  position: relative;
+  overflow: hidden; }
+  .wj-hero-block-inner {
+    display: -ms-flexbox;
+    display: flex; }
+    .wj-hero-block-inner h1, .wj-hero-block-inner h2, .wj-hero-block-inner h3 {
+      font-family: "miller-banner"; }
+    .wj-hero-block-inner--bg, .wj-hero-block-inner-content {
+      width: 50%; }
+    .wj-hero-block-inner-content {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-line-pack: center;
+          align-content: center; }
+      .wj-hero-block-inner-content__inner {
+        margin-left: -10%; }

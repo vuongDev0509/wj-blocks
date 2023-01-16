@@ -49,10 +49,10 @@ const attr = {
 	},
 };
 
-export default registerBlockType("antero-blocks/hero", {
+export default registerBlockType("wj-blocks/hero", {
 	title: __("Hero Section"),
 	icon: "shield",
-	category: "antero-blocks",
+	category: "wj-blocks",
 	keywords: [__("text"), __("image"), __("hero"), __("section")],
 	attributes: attr,
 	/* Render the block in the editor. */

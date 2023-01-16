@@ -7,7 +7,7 @@ const HeroSection = (props) => {
 	const { attributes, className } = props;
 	const { blockPaddingBottom, blockPaddingTop } = attributes
 	return (
-		<div className={['antero-hero-block', className].join(' ')}
+		<div className={['wj-hero-block', className].join(' ')}
 			style={{
 				'--paddingBottom': blockPaddingBottom.default,
 				'--paddingBottomTablet': blockPaddingBottom.tablet,

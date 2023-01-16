@@ -9,6 +9,7 @@
 	overflow: hidden;
 	padding-top: var(--paddingTop);
 	padding-bottom: var(--paddingBottom);
+	max-width: 100% !important;
 	@include media-breakpoint-down("lg") {
 		padding-top: var(--paddingTopTablet);
 		padding-bottom: var(--paddingBottomTablet);

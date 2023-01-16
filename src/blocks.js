@@ -14,6 +14,7 @@ import './blocks/wj-spacer';
 import './blocks/wj-container';
 import './blocks/wj-image-text';
 import './blocks/wj-icon-text';
+import './blocks/wj-hero';
 
 // import './blocks/wj-carousel-homepage';   
 // import './blocks/wj-separator';   

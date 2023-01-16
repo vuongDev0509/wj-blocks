@@ -6,18 +6,15 @@ const Save = (props) => {
 	return (
 		<HeroSection {...props}>
 			<div
-				className='antero-hero-block-inner'
+				className='wj-hero-block-inner'
 				style={{ background: bgGradientColor ? bgGradientColor : bgColor, '--background': bgGradientColor ? bgGradientColor : bgColor }}
 			>
-				<div className='antero-hero-block-inner--bg'>
+				<div className='wj-hero-block-inner--bg'>
 					<img src={imgUrl} srcset={srcSet} alt="Image" style={{ 'objectPosition': focalPoint ? `${focalPoint.x * 100}% ${focalPoint.y * 100}%` : undefined }} />
-					<span className='antero-hero-block-inner--bg-overlay'></span>
 				</div>
 
-				<div className='container'>
-					<div className='antero-hero-block-inner-content'>
-						<InnerBlocks.Content />
-					</div>
+				<div className='wj-hero-block-inner-content'>
+					<div className='wj-hero-block-inner-content__inner'>  <InnerBlocks.Content /> </div>
 				</div>
 			</div>
 		</HeroSection>

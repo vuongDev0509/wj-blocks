@@ -20,7 +20,10 @@ $secondary: #56B8FF;
 $black: #000;
 $white: #FFF;
 //Fonts
-
+.container{
+	margin-left: auto;
+	margin-right: auto;
+}
 @function em($pixels, $context: 16) {
 	@return #{$pixels / $context}em;
 }
