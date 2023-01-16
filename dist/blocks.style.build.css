@@ -14,10 +14,7 @@
   max-width: 100vw; }
 
 body h1::before, body h2::before, body h3::before, body h4::before, body h5::before, body h6::before {
-  content: none; }
-
-body h1, body h2, body h3, body h4, body h5, body h6, body p, body span {
-  font-family: "miller-banner"; }
+  content: none !important; }
 
 .has-white-colour-color {
   color: #FFF; }
