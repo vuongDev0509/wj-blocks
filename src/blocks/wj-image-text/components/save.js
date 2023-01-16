@@ -19,6 +19,7 @@ const Save = (props) => {
                 </div>
                 <div className='wj-images-text-block-content'> 
                     <h2 className='heading'
+                        data-aos="fade-up" data-aos-duration="1200"
                         style={{
                             color: colorHeading,
                             maxWidth: `${widthHeading}%`,

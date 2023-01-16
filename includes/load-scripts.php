@@ -63,7 +63,7 @@ function wj_block_assets()
 			'pluginDirPath' => plugin_dir_path(__DIR__),
 			'pluginDirUrl'  => plugin_dir_url(__DIR__),
 			// Add more data here that you want to access from `cgbGlobal` object.
-			'defaultIcon' => plugin_dir_url(__DIR__) . 'assets/images/icon-wj-housing.svg',
+			'defaultIcon' => plugin_dir_url(__DIR__) . 'assets/images/icon-default.png',
 		]
 	);
 
