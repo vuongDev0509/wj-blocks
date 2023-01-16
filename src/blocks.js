@@ -12,7 +12,7 @@
 import './blocks/global-styles';
 import './blocks/wj-spacer'; 
 import './blocks/wj-container';
-
+import './blocks/wj-image-text';
 // import './blocks/wj-carousel-homepage';   
 // import './blocks/wj-separator';   
 // import './blocks/wj-list-bullet';   

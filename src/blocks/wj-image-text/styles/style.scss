@@ -1,0 +1,38 @@
+.wj-images-text-block {
+	display: inline-block;
+	height: auto;
+    position: relative;
+	width: 100% !important;
+	max-width: 100% !important;
+	overflow: hidden;
+	.wj-images-text-block-inner{
+		display: flex;
+	}
+
+	&-image{
+		width: 50%;
+		min-height: 200px;
+		background-position:center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	&-content{
+		padding: 10%;
+		position: relative;
+		h2.heading{
+			font-size: 80px;
+			line-height: 120%;
+			font-weight: 700;
+			font-family: $font_primary;
+			margin: 0;
+			padding: 0;
+			text-align: left;
+			letter-spacing: 0.05em;
+			position: absolute;
+			top: 20%;
+			left: -10%;
+			max-width: 70%;
+		}
+	}
+}

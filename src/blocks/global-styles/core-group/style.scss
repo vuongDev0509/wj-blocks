@@ -1,0 +1,38 @@
+.editor-styles-wrapper {
+    .wp-block-group {
+        &.has-size-small {
+            gap: 30px;
+        }
+
+        &.has-size-regular {
+            gap: 45px;
+        }
+
+        &.has-size-large {
+            gap: 65px;
+        }
+    }
+}
+
+.wp-block-group {
+    &.has-size-small {
+        column-gap: 30px;
+        row-gap: 25px;
+    }
+
+    &.has-size-regular {
+        column-gap: 45px;
+        row-gap: 25px;
+        @include media-breakpoint-down("md") {
+            column-gap: 35px;
+        }
+    }
+
+    &.has-size-large {
+        column-gap: 65px;
+        row-gap: 25px;
+        @include media-breakpoint-down("md") {
+            column-gap: 35px;
+        }
+    }
+}

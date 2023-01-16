@@ -2,23 +2,37 @@
 Editor style
 */
 @import "../core-button/editor.scss";
-.block-editor-block-list__block{
-	> .nf-iframe-container{
-		> .nf-iframe-overlay{
-			> iframe{
+@import "../core-image/editor.scss";
+
+.block-editor-block-list__block {
+	>.nf-iframe-container {
+		>.nf-iframe-overlay {
+			>iframe {
 				width: 100%;
 			}
 		}
 	}
 }
+.editor-styles-wrapper .block-editor-block-list__block.wp-block{
+	width: 100%;
+	max-width: 100%;
+}
 .block-editor-default-block-appender .block-editor-inserter__toggle.components-button.has-icon {
 	background-color: $white;
 }
+
 .is-root-container {
 	overflow: hidden;
 
+	.wp-block-wj-blocks-wj-container {
+		.wp-block {
+			max-width: 100%;
+		}
+	}
+
 	.wp-block {
 		max-width: 1135px;
+
 	}
 
 	.wp-block[data-align="left"],
@@ -31,7 +45,7 @@ Editor style
 	}
 
 	p,
-	span,
+	span:not(.dashicon),
 	a {
 		font-family: $font_primary;
 	}
@@ -44,6 +58,7 @@ Editor style
 }
 
 @media (min-width: 1200px) {
+
 	.editor-styles-wrapper .container-xl,
 	.editor-styles-wrapper .container-lg,
 	.editor-styles-wrapper .container-md,
@@ -69,6 +84,7 @@ html :where(.wp-block) {
 
 .editor-styles-wrapper {
 	.block-editor-block-list__layout {
+
 		h1,
 		h2,
 		h3,
@@ -76,7 +92,7 @@ html :where(.wp-block) {
 		h5,
 		h6 {
 			font-family: $font_primary;
-			font-weight: 700;
+			font-weight: 400;
 		}
 
 		h1 {
@@ -93,13 +109,13 @@ html :where(.wp-block) {
 		h3,
 		.h3 {
 			line-height: 1.4;
-			font-size: 2em;
+			font-size: 32px;
 		}
 
 		h4,
 		.h4 {
 			line-height: (36/24);
-			font-size: 1.5em;
+			font-size: 24px;
 		}
 
 		h5,
@@ -113,5 +129,13 @@ html :where(.wp-block) {
 			line-height: 1.2;
 			font-size: 1.125em;
 		}
+	}
+}
+
+.components-flex {
+
+	&.components-select-control,
+	&.components-input-control {
+		height: auto !important;
 	}
 }

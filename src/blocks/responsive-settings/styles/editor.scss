@@ -1,0 +1,24 @@
+.wj-responsive-toggle {
+
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+
+	.components-button.has-icon.has-text {
+		margin-right: 5px;
+	}
+
+	.components-button.has-icon .dashicon {
+		margin-right: 2px;
+		margin-left: 0;
+	}
+	.components-button.is-secondary, .components-button.is-secondary:hover:not(:disabled), .components-button.is-tertiary:hover:not(:disabled) {
+		box-shadow: inset 0 0 0 1px maroon;
+		color: maroon;
+	}
+	.components-button.is-primary{
+		background: maroon;
+	}
+	.components-button.is-primary:hover:not(:disabled){
+		background: maroon;
+	}
+}
