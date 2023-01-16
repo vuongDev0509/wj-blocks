@@ -1,17 +1,21 @@
 .wj-icon-text-block {
-	display: inline-block;
 	height: auto;
     position: relative;
 	width: 100% !important;
 	max-width: 100% !important;
 	overflow: hidden;
+	.wj-icon-text-block-icon{
+		img{
+			max-width: 100px;
+		}
+	}
 	h1, h2, h3{
 		margin: 0;
 		padding: 0;
 	}
 
 	&-inner{
-		border: 2px solid #fff;
+		border: 2px solid #d3ccc8;
 		padding: 40px;
 	}
 }

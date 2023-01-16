@@ -1,5 +1,4 @@
 .wj-images-text-block {
-	display: inline-block;
 	height: auto;
     position: relative;
 	width: 100% !important;
@@ -34,6 +33,7 @@
 			top: 20%;
 			left: -12%;
 			max-width: 70%;
+			z-index: 99;
 		}
 	}
 }
