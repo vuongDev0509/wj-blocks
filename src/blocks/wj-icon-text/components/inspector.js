@@ -33,7 +33,7 @@ const instructions = (
 
 const Inspector = (props) => {
 	const { attributes, setAttributes, preview } = props;
-    const {imgID, imgUrl, heading, colorHeading, widthHeading, bgColor} = attributes;
+    const {imgID, imgUrl, widthImage} = attributes;
     	
 	return (
         <InspectorControls>
@@ -109,39 +109,16 @@ const Inspector = (props) => {
 						</MediaUploadCheck>
 					)}
 				</div>
-                <hr/>
-                <TextControl
-                    label="Heading"
-                    value={heading}
-                    onChange={(value) => setAttributes({ heading: value })}
-                /> 
-
+   
                 <hr/>
                 <RangeControl
-                    label="Max Width Heading"
+                    label="Max Width Image"
                     min={1}
                     max={100}
-                    value={widthHeading}
-                    onChange={(widthHeading) => setAttributes({ widthHeading })}
+                    value={widthImage}
+                    onChange={(widthImage) => setAttributes({ widthImage })}
                 />
             </PanelBody>
-
-            <PanelColorSettings
-                initialOpen={false}
-                title='Color Styles'
-                colorSettings={[
-                    {
-                        value: colorHeading,
-                        onChange: (value) => setAttributes({ colorHeading: value }),
-                        label: 'Color Heading',
-                    },
-                    {
-                        value: bgColor,
-                        onChange: (value) => setAttributes({ bgColor: value }),
-                        label: 'Background Color',
-                    }
-                ]}
-            />
         </InspectorControls>
 	);
 }

@@ -61,6 +61,21 @@ body h1::before, body h2::before, body h3::before, body h4::before, body h5::bef
   -ms-flex-line-pack: center;
       align-content: center; }
 
+.wj-ss-hp.wj-block-container .wj-container-inside {
+  z-index: auto; }
+  .wj-ss-hp.wj-block-container .wj-container-inside > .container > div {
+    position: relative;
+    z-index: 999; }
+  .wj-ss-hp.wj-block-container .wj-container-inside .wj-row-menu-hp {
+    position: relative;
+    margin-top: -135px !important;
+    z-index: 999; }
+
+.wj-hero-block.wj-hero-hp .wj-hero-block-inner--bg img {
+  min-height: 600px;
+  -o-object-fit: cover;
+  object-fit: cover; }
+
 figure.wp-block-image:not(.block-editor-block-list__block)::before {
   content: none; }
 

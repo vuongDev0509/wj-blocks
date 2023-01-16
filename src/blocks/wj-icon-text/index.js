@@ -14,7 +14,7 @@ registerBlockType('wj-blocks/wj-icon-text', {
     keywords: [__('icon'), __('button'), __('text')],
     icon: 'block-default',
     attributes: {
-        widthHeading: {
+        widthImage: {
             type: 'number',
             default: 70
         },
