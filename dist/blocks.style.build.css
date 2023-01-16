@@ -13,6 +13,12 @@
   margin-right: calc(-50vw + 50%);
   max-width: 100vw; }
 
+body h1::before, body h2::before, body h3::before, body h4::before, body h5::before, body h6::before {
+  content: none; }
+
+body h1, body h2, body h3, body h4, body h5, body h6, body p, body span {
+  font-family: "miller-banner"; }
+
 .has-white-colour-color {
   color: #FFF; }
 
@@ -124,7 +130,7 @@ body .wp-block-gallery.wjstg-gallery-incept {
 
 .wp-block-button .wp-block-button__link {
   background-color: transparent !important;
-  color: #a19e98 !important;
+  color: #a19e98;
   letter-spacing: 0.05em;
   font-size: 18px;
   padding: 0 !important;
@@ -515,7 +521,8 @@ div.wp-block-image:not(.block-editor-block-list__block) {
     background-size: cover; }
   .wj-images-text-block-content {
     padding: 10%;
-    position: relative; }
+    position: relative;
+    width: 50%; }
     .wj-images-text-block-content h2.heading {
       font-size: 80px;
       line-height: 120%;
@@ -527,7 +534,7 @@ div.wp-block-image:not(.block-editor-block-list__block) {
       letter-spacing: 0.05em;
       position: absolute;
       top: 20%;
-      left: -10%;
+      left: -12%;
       max-width: 70%; }
 /**
  * #.# Common SCSS
@@ -590,6 +597,7 @@ div.wp-block-image:not(.block-editor-block-list__block) {
       -ms-flex-align: center;
           align-items: center;
       -ms-flex-line-pack: center;
-          align-content: center; }
+          align-content: center;
+      z-index: 99; }
       .wj-hero-block-inner-content__inner {
         margin-left: -10%; }
