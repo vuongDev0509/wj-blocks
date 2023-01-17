@@ -19,13 +19,16 @@ const Save = (props) => {
                 </div>
                 <div className='wj-images-text-block-content'> 
                     <h2 className='heading'
-                        data-aos="fade-up" data-aos-duration="1200"
+                        data-aos="fade-up" data-aos-duration="1200" data-aos-once="false"
                         style={{
                             color: colorHeading,
                             maxWidth: `${widthHeading}%`,
                         }}
                     > {heading} </h2>
-                    <div className='wj-images-text-block-content__inner'>
+                    <div className='wj-images-text-block-content__inner'
+                        data-aos-duration="1200"
+                        data-aos="fade-in" data-aos-once="false" data-aos-delay="500"
+                    >
                         <InnerBlocks.Content />
                     </div>
                 </div>
