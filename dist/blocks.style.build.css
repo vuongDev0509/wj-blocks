@@ -521,6 +521,7 @@ div.wp-block-image:not(.block-editor-block-list__block) {
     right: 0;
     left: 0;
     height: 100%;
+    width: 100%;
     z-index: 0; }
   .wj-block-container .wj-container-image {
     -o-object-fit: cover;
