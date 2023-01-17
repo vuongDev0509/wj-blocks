@@ -42,6 +42,10 @@
 			left: -12%;
 			max-width: 70%;
 			z-index: 99;
+			@media only screen and (max-width: 1199px) {
+				max-width: 100% !important; 
+				font-size: 50px;
+			}
 		}
 	}
 }
