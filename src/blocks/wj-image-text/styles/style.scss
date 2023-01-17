@@ -22,13 +22,16 @@
 	}
 
 	&-content{
-		padding: 0 10%;
+		padding: 0;
 		position: relative;
 		width: 50%;
 		display: flex;
 		align-items: center;
 		align-content: center;
 		flex-wrap: wrap;
+		@media only screen and (max-width: 991px){
+			width: 100%;
+		}
 		h2.heading{
 			font-size: 80px;
 			line-height: 120%;
@@ -40,9 +43,23 @@
 			letter-spacing: 0.05em;
 			max-width: 70%;
 			z-index: 99;
+			margin-left: -14%;
+			@media only screen and (max-width: 1500px) {
+				font-size: 50px;
+			}
 			@media only screen and (max-width: 1199px) {
 				max-width: 100% !important; 
 				font-size: 50px;
+			}
+		}
+
+		.wj-images-text-block-content__inner{
+			padding: 0 20%;
+			@media only screen and (max-width: 1199px) {
+				padding: 0 10%;
+			}
+			@media only screen and (max-width: 991px){
+				padding: 40px 15px;
 			}
 		}
 	}
