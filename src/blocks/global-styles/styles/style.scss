@@ -59,6 +59,11 @@ body{
 	align-content: center;
 }
 
+.block-editor-block-list__block{
+    .wj-ss-hp.wj-block-container .wj-container-inside{
+        z-index: 2;
+    }
+}
 
 .wj-ss-hp{
     &.wj-block-container{
