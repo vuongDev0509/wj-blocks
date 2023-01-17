@@ -35,9 +35,6 @@ body h1::before, body h2::before, body h3::before, body h4::before, body h5::bef
 .wj-hero-block-inner-content__inner h4 {
   font-family: 'Karla'; }
 
-.wj-hero-block-inner-content__inner {
-  margin-left: -20%; }
-
 .wj-hero-block-inner-content__inner h1 {
   max-width: 500px; }
 
@@ -75,6 +72,9 @@ body h1::before, body h2::before, body h3::before, body h4::before, body h5::bef
   min-height: 600px;
   -o-object-fit: cover;
   object-fit: cover; }
+
+.wj-hero-block.wj-hero-hp .wj-hero-block-inner-content__inner h4, .wj-hero-block.wj-hero-hp .wj-hero-block-inner-content__inner h1 {
+  margin-left: -20%; }
 
 figure.wp-block-image:not(.block-editor-block-list__block)::before {
   content: none; }
@@ -684,5 +684,3 @@ div.wp-block-image:not(.block-editor-block-list__block) {
       -ms-flex-line-pack: center;
           align-content: center;
       z-index: 99; }
-      .wj-hero-block-inner-content__inner {
-        margin-left: -10%; }

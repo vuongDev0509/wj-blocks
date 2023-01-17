@@ -37,9 +37,6 @@ body{
     font-family: 'Karla';	
 }
 
-.wj-hero-block-inner-content__inner{
-	margin-left: -20%;
-}
 
 .wj-hero-block-inner-content__inner h1{
 	max-width: 500px;
@@ -90,6 +87,12 @@ body{
                 -o-object-fit: cover;
                 object-fit: cover;
             }            
+        }
+
+        .wj-hero-block-inner-content__inner{
+            h4, h1{
+                margin-left: -20%;
+            }
         }
     }
 }

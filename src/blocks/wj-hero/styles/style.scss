@@ -1,8 +1,4 @@
 .wj-hero-block {
-	// width: 100vw;
-	// margin-left: 50%;
-	// transform: translateX(-50%);
-	// -webkit-transform: translateX(-50%);
 	position: relative;
 	overflow: hidden;
 	&-inner {
@@ -20,9 +16,6 @@
 			align-items: center;
 			align-content: center;
 			z-index: 99;
-			&__inner{
-				margin-left: -10%;
-			}
 		}
 	}
 }
