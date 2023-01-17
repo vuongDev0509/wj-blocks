@@ -265,7 +265,7 @@ html :where(.wp-block) {
   max-width: 100vw; }
 
 .wj-blocks.wj-block-spacer {
-  background: wheat; }
+  background: #333; }
 /**
  * #.# Common SCSS
  *
