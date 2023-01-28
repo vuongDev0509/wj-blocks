@@ -29,9 +29,9 @@ registerBlockType('wj-blocks/wj-icon-text', {
         srcset_image: {
             type: "string",
         },        
-        heading: {
+        link: {
             type: 'string',
-            default: 'Heading Here'
+            default: '#!'
         },
         colorHeading: {
             type: 'string',
@@ -40,6 +40,10 @@ registerBlockType('wj-blocks/wj-icon-text', {
         bgColor: {
             type: 'string',
             default:'#836d5f'
+        },
+        animate: {
+            type: 'boolean',
+            default: false
         },
     },
 

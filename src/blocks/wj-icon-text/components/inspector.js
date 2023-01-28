@@ -33,7 +33,7 @@ const instructions = (
 
 const Inspector = (props) => {
 	const { attributes, setAttributes, preview } = props;
-    const {imgID, imgUrl, widthImage} = attributes;
+    const {imgID, imgUrl, widthImage, animate, link} = attributes;
     	
 	return (
         <InspectorControls>
@@ -109,6 +109,20 @@ const Inspector = (props) => {
 						</MediaUploadCheck>
 					)}
 				</div>
+				
+				<hr/>
+				<ToggleControl
+					label="Animate Image"
+					checked={animate}
+					onChange={() => setAttributes({ animate: !animate })}
+				/>
+
+				<hr/>
+				<TextControl
+					value={link}
+					label="Link"
+					onChange={(link) => setAttributes({ link })}
+                />
    
                 <hr/>
                 <RangeControl
