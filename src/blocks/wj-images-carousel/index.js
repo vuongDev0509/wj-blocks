@@ -44,6 +44,10 @@ const attr = {
 		type: 'number',
 		default: 30
 	},
+	speed: {
+		type: 'number',
+		default: 2000
+	},
 	arrows: {
 		type: 'boolean',
 		default: true

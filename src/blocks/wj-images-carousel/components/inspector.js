@@ -8,7 +8,7 @@ import {
 
 const Inspector = (props) => {
     const { attributes, className, setAttributes  } = props;
-    const { slidesToShow, slidesToScroll, arrows, dots,  autoplay, infinite, imgID, imgUrl, spaceBetween, heightItem} = attributes;
+    const { slidesToShow, slidesToScroll, arrows, dots,  autoplay, infinite, imgID, imgUrl, spaceBetween, heightItem, speed} = attributes;
     const instructions = <p>{__('To edit the image, you need permission to upload media.')}</p>;
 
     return (
@@ -117,6 +117,13 @@ const Inspector = (props) => {
                     label="Height Item"
                     value={heightItem}
                     onChange={(value) => setAttributes({ heightItem: value })}
+                /> 
+
+                <hr/>
+                <TextControl
+                    label="Speed"
+                    value={speed}
+                    onChange={(value) => setAttributes({ speed: value })}
                 /> 
 
                 <hr />

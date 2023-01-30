@@ -11,7 +11,7 @@ const Save = (props) => {
 		autoplay: attributes.autoplay,
 		spaceBetween: attributes.spaceBetween,
 		loop: attributes.infinite,
-		speed:2000,
+		speed:attributes.speed,
 		navigation: {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
