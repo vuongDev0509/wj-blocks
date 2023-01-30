@@ -32,7 +32,8 @@ const Save = (props) => {
 			},
 			1200: {
 				slidesPerView: parseInt(attributes.slidesToShow),
-				spaceBetween: parseInt(attributes.slidesToScroll),
+				slidesToScroll: parseInt(attributes.slidesToScroll),
+				spaceBetween: attributes.spaceBetween,
 			},
 		},
 	}
