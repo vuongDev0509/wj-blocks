@@ -9,9 +9,13 @@ jQuery(function ($) {
 
 		$.each( $isBlock , function (index, value ) {
 			const $data = $(this).data('slider')
-			var swiper = new Swiper('.wj-images-sliders', $data);
+			loadSlider($data)
+			// var swiper = new Swiper('.wj-images-sliders', $data);
 		} );
 
+		function loadSlider($data){
+			const swiper = new Swiper('.wj-images-sliders', $data);
+		}
 		// const $data = $isBlock.data('slider')
 		
 		// var swiper = new Swiper('.wj-images-sliders', $data);
