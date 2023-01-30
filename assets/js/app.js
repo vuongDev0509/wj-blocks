@@ -5,10 +5,16 @@ jQuery(function ($) {
 	
 	const WjImageCarousel = () => {
 		const $isBlock = $('.wj-images-sliders');
-		if (!$isBlock.length) return
-		const $data = $isBlock.data('slider')
+		if (!$isBlock.length) return;
+
+		$.each( $isBlock , function (index, value ) {
+			const $data = $(this).data('slider')
+			var swiper = new Swiper('.wj-images-sliders', $data);
+		} );
+
+		// const $data = $isBlock.data('slider')
 		
-		var swiper = new Swiper('.wj-images-sliders', $data);
+		// var swiper = new Swiper('.wj-images-sliders', $data);
 	}
 
 	$(window).on('load', function () {
