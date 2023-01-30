@@ -4,18 +4,22 @@ import { InnerBlocks } from '@wordpress/block-editor'
 const Save = (props) => {
     const { attributes, className, setAttributes  } = props;
 	const { imgUrl} = attributes;
-	
+
 	let data = {
 		slidesPerView: parseInt(attributes.slidesToShow),
 		slidesToScroll: parseInt(attributes.slidesToScroll),
 		autoplay: attributes.autoplay,
 		spaceBetween: attributes.spaceBetween,
-		pagination: {el: ".swiper-pagination"},
 		loop: attributes.infinite,
 		speed:2000,
 		navigation: {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+			type: 'bullets',
 		},
 		breakpoints: {
 			767: {
