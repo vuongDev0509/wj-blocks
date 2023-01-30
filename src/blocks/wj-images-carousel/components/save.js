@@ -22,15 +22,19 @@ const Save = (props) => {
 			type: 'bullets',
 		},
 		breakpoints: {
-			767: {
+			0: {
 			  slidesPerView: 1,
 			  spaceBetween: 0,
 			},
-			1199: {
-				slidesPerView: 3,
-				spaceBetween: 20,
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 15,
 			},
-		  },
+			1200: {
+				slidesPerView: parseInt(attributes.slidesToShow),
+				spaceBetween: parseInt(attributes.slidesToScroll),
+			},
+		},
 	}
 	data = JSON.stringify(data)
 	return (
