@@ -450,3 +450,60 @@ html :where(.wp-block) {
 .wp-block-wj-blocks-hero-carousel .block-editor-block-list__layout .block-list-appender.wp-block {
   position: relative;
   margin: 0 auto; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.entry-content .alignfull {
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  max-width: 100vw; }
+
+.wj-images-sliders.wj-slider-edit .wj-images-sliders-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  overflow: auto; }
+  .wj-images-sliders.wj-slider-edit .wj-images-sliders-wrapper .swiper-slide {
+    width: 25%;
+    margin-right: 30px;
+    min-width: 350px; }
+
+.components-panel .components-button.wj-gallery-sidebar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .components-panel .components-button.wj-gallery-sidebar .img-item {
+    width: calc(100% / 3);
+    height: 100px;
+    padding: 0 5px;
+    position: relative;
+    margin-bottom: 10px; }
+    .components-panel .components-button.wj-gallery-sidebar .img-item img {
+      -o-object-fit: cover;
+      object-fit: cover;
+      height: 100%;
+      width: calc(100% - 10px);
+      -webkit-transition: 0.3s ease;
+      -o-transition: 0.3s ease;
+      transition: 0.3s ease;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      top: 0;
+      -o-object-position: center;
+         object-position: center; }
