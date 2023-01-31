@@ -114,6 +114,12 @@ Editor style
 .wp-block[data-align="full"] > .block-editor-block-list__block.wp-block-image > div {
   display: block; }
 
+.post-type-experiences .block-editor-block-list__layout.is-root-container > .wp-block[data-align=full] {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+  left: 0 !important; }
+
 .block-editor-block-list__block > .nf-iframe-container > .nf-iframe-overlay > iframe {
   width: 100%; }
 

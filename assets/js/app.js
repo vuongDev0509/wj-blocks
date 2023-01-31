@@ -34,6 +34,8 @@ jQuery(function ($) {
 	});
 
 	$(document).ready(function (){
+		console.log("vvvv")
 		WjImageCarousel()
+		
 	});
 });
