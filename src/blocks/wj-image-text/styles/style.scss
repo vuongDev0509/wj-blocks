@@ -33,7 +33,7 @@
 			width: 100%;
 		}
 		h2.heading{
-			font-size: 80px;
+			font-size: 88px;
 			line-height: 120%;
 			font-weight: 700;
 			font-family: $font_primary;
@@ -45,11 +45,25 @@
 			z-index: 99;
 			margin-left: -14%;
 			@media only screen and (max-width: 1500px) {
-				font-size: 50px;
+				font-size: 58px;
 			}
 			@media only screen and (max-width: 1199px) {
 				max-width: 100% !important; 
 				font-size: 50px;
+			}
+			@media only screen and (max-width: 991px){
+				margin-left:0;
+				position: relative;
+				top: inherit;
+				left: inherit; 
+				width: 100%;
+			}
+			@media only screen and (max-width: 767px){
+				font-size: 33px !important;
+			}
+
+			@media only screen and (min-width: 1921px){
+				font-size: 110px;
 			}
 		}
 

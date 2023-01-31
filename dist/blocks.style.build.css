@@ -632,7 +632,7 @@ div.wp-block-image:not(.block-editor-block-list__block) {
       .wj-images-text-block-content {
         width: 100%; } }
     .wj-images-text-block-content h2.heading {
-      font-size: 80px;
+      font-size: 88px;
       line-height: 120%;
       font-weight: 700;
       font-family: "miller-banner";
@@ -645,11 +645,24 @@ div.wp-block-image:not(.block-editor-block-list__block) {
       margin-left: -14%; }
       @media only screen and (max-width: 1500px) {
         .wj-images-text-block-content h2.heading {
-          font-size: 50px; } }
+          font-size: 58px; } }
       @media only screen and (max-width: 1199px) {
         .wj-images-text-block-content h2.heading {
           max-width: 100% !important;
           font-size: 50px; } }
+      @media only screen and (max-width: 991px) {
+        .wj-images-text-block-content h2.heading {
+          margin-left: 0;
+          position: relative;
+          top: inherit;
+          left: inherit;
+          width: 100%; } }
+      @media only screen and (max-width: 767px) {
+        .wj-images-text-block-content h2.heading {
+          font-size: 33px !important; } }
+      @media only screen and (min-width: 1921px) {
+        .wj-images-text-block-content h2.heading {
+          font-size: 110px; } }
     .wj-images-text-block-content .wj-images-text-block-content__inner {
       padding: 0 20%; }
       @media only screen and (max-width: 1199px) {
