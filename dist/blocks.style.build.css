@@ -219,7 +219,7 @@ body .wp-block-gallery.wjstg-gallery-incept {
 .wp-block-button .wp-block-button__link {
   background-color: transparent !important;
   color: #a19e98;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.15em;
   font-size: 18px;
   padding: 0 !important;
   margin: 0;
@@ -227,7 +227,9 @@ body .wp-block-gallery.wjstg-gallery-incept {
   font-family: "Karla";
   border: none !important;
   position: relative;
-  padding-right: 20px !important; }
+  padding-right: 20px !important;
+  text-transform: uppercase !important;
+  font-weight: 700; }
   .wp-block-button .wp-block-button__link::before {
     content: " ";
     display: inline-block;
@@ -647,7 +649,7 @@ div.wp-block-image:not(.block-editor-block-list__block) {
       margin: 0;
       padding: 0;
       text-align: left;
-      letter-spacing: 0.05em;
+      letter-spacing: 0em;
       max-width: 70%;
       z-index: 99;
       margin-left: -14%; }
