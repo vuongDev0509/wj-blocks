@@ -78,6 +78,14 @@ body h1::before, body h2::before, body h3::before, body h4::before, body h5::bef
   -o-object-fit: cover;
   object-fit: cover; }
 
+.wj-hero-block.wj-hero-hp .wj-hero-block-inner-content__inner h1 {
+  max-width: 390px;
+  margin-top: 0;
+  margin-bottom: 0; }
+  @media only screen and (max-width: 767px) {
+    .wj-hero-block.wj-hero-hp .wj-hero-block-inner-content__inner h1 {
+      max-width: 100%; } }
+
 .wj-hero-block.wj-hero-hp .wj-hero-block-inner-content__inner h4, .wj-hero-block.wj-hero-hp .wj-hero-block-inner-content__inner h1 {
   margin-left: -20%; }
 

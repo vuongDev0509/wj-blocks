@@ -95,6 +95,14 @@ body{
         }
 
         .wj-hero-block-inner-content__inner{
+            h1{
+                max-width: 390px;
+                margin-top: 0;
+                margin-bottom: 0;
+                @media only screen and (max-width: 767px) {
+                    max-width: 100%;
+                }
+            }
             h4, h1{
                 margin-left: -20%;
             }
