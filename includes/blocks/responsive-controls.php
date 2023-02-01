@@ -1,5 +1,4 @@
 <?php
-echo "worrk";
 function responsive_settings( $block_content, $block, $uuid = false ) {
 
 	if (
