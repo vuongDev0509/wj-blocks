@@ -10,7 +10,7 @@ const Save = (props) => {
 				style={{ background: bgGradientColor ? bgGradientColor : bgColor, '--background': bgGradientColor ? bgGradientColor : bgColor }}
 			>
 				<div className='wj-hero-block-inner--bg'>
-					<img src={imgUrl} srcset={srcSet} alt="Image" style={{ 'objectPosition': focalPoint ? `${focalPoint.x * 100}% ${focalPoint.y * 100}%` : undefined }} />
+					<img width="100" height="100" src={imgUrl} srcset={srcSet} alt="Image" style={{ 'objectPosition': focalPoint ? `${focalPoint.x * 100}% ${focalPoint.y * 100}%` : undefined }} />
 				</div>
 
 				<div className='wj-hero-block-inner-content'>

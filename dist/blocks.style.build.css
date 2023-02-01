@@ -739,6 +739,9 @@ div.wp-block-image:not(.block-editor-block-list__block) {
       font-family: "miller-banner"; }
     .wj-hero-block-inner--bg, .wj-hero-block-inner-content {
       width: 50%; }
+    .wj-hero-block-inner--bg img {
+      width: 100%;
+      height: auto; }
     .wj-hero-block-inner-content {
       display: -ms-flexbox;
       display: flex;
