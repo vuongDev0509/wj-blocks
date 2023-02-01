@@ -705,6 +705,7 @@ div.wp-block-image:not(.block-editor-block-list__block) {
   max-width: 100% !important;
   overflow: hidden; }
   .wj-icon-text-block .wj-icon-text-block-icon img {
+    width: 100%;
     max-width: 100px; }
   .wj-icon-text-block h1, .wj-icon-text-block h2, .wj-icon-text-block h3 {
     margin: 0;
