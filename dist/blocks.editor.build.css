@@ -513,3 +513,36 @@ html :where(.wp-block) {
       top: 0;
       -o-object-position: center;
          object-position: center; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.entry-content .alignfull {
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  max-width: 100vw; }
+
+.wj-responsive-toggle {
+  margin-top: 2rem;
+  margin-bottom: 1rem; }
+  .wj-responsive-toggle .components-button.has-icon.has-text {
+    margin-right: 5px; }
+  .wj-responsive-toggle .components-button.has-icon .dashicon {
+    margin-right: 2px;
+    margin-left: 0; }
+  .wj-responsive-toggle .components-button.is-secondary, .wj-responsive-toggle .components-button.is-secondary:hover:not(:disabled), .wj-responsive-toggle .components-button.is-tertiary:hover:not(:disabled) {
+    -webkit-box-shadow: inset 0 0 0 1px maroon;
+            box-shadow: inset 0 0 0 1px maroon;
+    color: maroon; }
+  .wj-responsive-toggle .components-button.is-primary {
+    background: maroon; }
+  .wj-responsive-toggle .components-button.is-primary:hover:not(:disabled) {
+    background: maroon; }
