@@ -16,6 +16,8 @@ const Save = (props) => {
                     <a href={link}> 
                         <div className='wj-icon-text-block-icon'> 
                             <img src={imgUrl} alt="icon" 
+                                width="100"
+                                height="100"
                                 style={{
                                     maxWidth: `${widthImage}px`,
                                 }} 
