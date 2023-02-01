@@ -62,14 +62,11 @@ function wj_colour_palette_default() {
 
 add_action( 'after_setup_theme', 'wj_colour_palette_default' );
 
-function wj_functions_block () {
-	$array_block = [
-		'post-list-slider',
-	];
 
-	foreach($array_block as $filename){
-		require_once plugin_dir_path( __FILE__ ) . 'blocks/'.$filename.'.php';
-	} 
+function wj_require_render_block()
+{
+	foreach (glob(__DIR__ . '/blocks/*.php') as $file) {
+		require $file;
+	}
 }
-
-add_action( 'init', 'wj_functions_block' );
+add_action('init', 'wj_require_render_block');
