@@ -26,7 +26,9 @@ const attr = {
 		type: 'string',
 		default: ''
 	},
-
+	id: {
+		type: 'string',
+	},
 	//slider opt
 	slidesToShow: {
 		type: 'number',

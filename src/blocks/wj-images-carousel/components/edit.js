@@ -1,11 +1,15 @@
 import { __ } from '@wordpress/i18n'
-import { Fragment } from '@wordpress/element'
+import { Fragment, useEffect } from '@wordpress/element'
 import Inspector from './inspector'
 
 const Edit = (props) => {
-    const { attributes, className, setAttributes  } = props; 
-    const { imgUrl} = attributes;
-
+    const { attributes, className, setAttributes, clientId } = props; 
+    const { imgUrl, id} = attributes;
+    
+    useEffect(() => {
+		setAttributes({ id: 'wj-' + clientId })	
+	}, [id])
+    
     return(
         <Fragment>            
             <Inspector {...props} />

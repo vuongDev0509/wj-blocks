@@ -9,16 +9,14 @@ jQuery(function ($) {
 
 		$.each( $isBlock , function (index, value ) {
 			const $data = $(this).data('slider')
-			loadSlider($data)
-			// var swiper = new Swiper('.wj-images-sliders', $data);
+			const $id   = $(this).attr("id");
+			
+			loadSlider($id, $data)
 		} );
 
-		function loadSlider($data){
-			const swiper = new Swiper('.wj-images-sliders', $data);
+		function loadSlider($id, $data){
+			const swiper = new Swiper(`#${$id}`, $data);
 		}
-		// const $data = $isBlock.data('slider')
-		
-		// var swiper = new Swiper('.wj-images-sliders', $data);
 	}
 
 	$(window).on('load', function () {

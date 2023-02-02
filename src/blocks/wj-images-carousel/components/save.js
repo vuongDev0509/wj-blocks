@@ -3,7 +3,7 @@ import { InnerBlocks } from '@wordpress/block-editor'
 
 const Save = (props) => {
     const { attributes, className, setAttributes  } = props;
-	const { imgUrl} = attributes;
+	const { imgUrl, id} = attributes;
 
 	let data = {
 		slidesPerView: parseInt(attributes.slidesToShow),
@@ -39,7 +39,7 @@ const Save = (props) => {
 	}
 	data = JSON.stringify(data)
 	return (
-		<div className={['wj-blocks', 'wj-images-sliders swiper', className].join(' ')}
+		<div id={id} className={['wj-blocks', 'wj-images-sliders swiper', className].join(' ')}
 			data-slider={data}
 		>
 			<div className="wj-images-sliders-wrapper swiper-wrapper"

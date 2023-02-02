@@ -11,13 +11,12 @@
   },
   "dependencies": {
     "@wordpress/server-side-render": "^3.0.8",
+    "axios": "^0.22.0",
     "bootstrap-scss": "^5.1.1",
     "cgb-scripts": "1.23.1",
     "parcel-bundler": "^1.12.5",
-    "react-sortable-hoc": "^2.0.0",
     "react-beautiful-dnd": "^13.1.0",
-    "uuid": "^8.3.2",
-    "axios": "^0.22.0",
+    "react-sortable-hoc": "^2.0.0",
     "url-loader": "^4.1.1"
   },
   "devDependencies": {
