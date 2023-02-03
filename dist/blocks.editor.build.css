@@ -562,3 +562,6 @@ html :where(.wp-block) {
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
   max-width: 100vw; }
+
+.wj-hero-carousel-block .block-list-appender {
+  padding-top: 60px; }
