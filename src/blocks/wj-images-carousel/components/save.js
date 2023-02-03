@@ -39,7 +39,7 @@ const Save = (props) => {
 	}
 	data = JSON.stringify(data)
 	return (
-		<div id={id} className={['wj-blocks', 'wj-images-sliders swiper', className].join(' ')}
+		<div id={id} className={['wj-blocks wj-carousel', 'wj-images-sliders swiper', className].join(' ')}
 			data-slider={data}
 		>
 			<div className="wj-images-sliders-wrapper swiper-wrapper"

@@ -17,3 +17,4 @@ import './blocks/wj-icon-text';
 import './blocks/wj-hero';
 import './blocks/wj-images-carousel';
 import './blocks/responsive-settings';  
+import './blocks/wj-carousel-homepage';

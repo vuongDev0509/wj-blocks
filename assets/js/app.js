@@ -4,7 +4,7 @@ jQuery(function ($) {
 
 	
 	const WjImageCarousel = () => {
-		const $isBlock = $('.wj-images-sliders');
+		const $isBlock = $('.wj-carousel');
 		if (!$isBlock.length) return;
 
 		$.each( $isBlock , function (index, value ) {
@@ -15,6 +15,7 @@ jQuery(function ($) {
 		} );
 
 		function loadSlider($id, $data){
+			console.log($id)
 			const swiper = new Swiper(`#${$id}`, $data);
 		}
 	}

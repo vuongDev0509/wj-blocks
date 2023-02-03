@@ -811,3 +811,60 @@ div.wp-block-image:not(.block-editor-block-list__block) {
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
   max-width: 100vw; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.entry-content .alignfull {
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  max-width: 100vw; }
+
+.wp-block-wj-blocks-hero-carousel {
+  width: 100vw;
+  margin-left: 50% !important;
+  -ms-transform: translateX(-50%) !important;
+      transform: translateX(-50%) !important;
+  -webkit-transform: translateX(-50%) !important;
+  position: relative;
+  overflow: hidden;
+  max-width: 100% !important;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding-top: 0 !important; }
+  .wp-block-wj-blocks-hero-carousel .wj-hero-carousel-block-inner .wj-carousel-item-block .wj-carousel-item-block-inner {
+    height: 100%;
+    position: relative; }
+    .wp-block-wj-blocks-hero-carousel .wj-hero-carousel-block-inner .wj-carousel-item-block .wj-carousel-item-block-inner-wrap-frame {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%; }
+      .wp-block-wj-blocks-hero-carousel .wj-hero-carousel-block-inner .wj-carousel-item-block .wj-carousel-item-block-inner-wrap-frame img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: center;
+           object-position: center; }
+    .wp-block-wj-blocks-hero-carousel .wj-hero-carousel-block-inner .wj-carousel-item-block .wj-carousel-item-block-inner .wj-carousel-container-content {
+      max-width: 1300px;
+      width: 100%;
+      margin: 0 auto !important; }
+  .wp-block-wj-blocks-hero-carousel .wj-hero-carousel-block-inner .wj-carousel-item-block .wj-hero-block-inner--bg {
+    margin-bottom: -60px; }
+  .wp-block-wj-blocks-hero-carousel .wj-hero-carousel-block-inner .wj-carousel-item-block .wj-hero-block {
+    overflow: inherit; }
