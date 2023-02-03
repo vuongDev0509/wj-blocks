@@ -840,19 +840,30 @@ div.wp-block-image:not(.block-editor-block-list__block) {
   margin-bottom: 0 !important;
   margin-top: 0 !important;
   padding-bottom: 0 !important;
-  padding-top: 0 !important; }
+  padding-top: 0 !important;
+  overflow: inherit;
+  z-index: 9; }
   .wp-block-wj-blocks-hero-carousel .wj-hero-carousel-block-inner .wj-carousel-item-block .wj-carousel-item-block-inner {
     width: 100%;
     height: auto;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    margin-left: -1px; }
   .wp-block-wj-blocks-hero-carousel .wj-hero-carousel-block-inner .wj-carousel-item-block-container {
     max-width: 100%;
     width: 100%;
     padding-right: 5%;
     display: table-cell;
     padding-left: 10%; }
+    @media only screen and (max-width: 1359px) {
+      .wp-block-wj-blocks-hero-carousel .wj-hero-carousel-block-inner .wj-carousel-item-block-container {
+        padding-left: 6%;
+        padding-right: 3%; } }
+    @media only screen and (max-width: 1359px) {
+      .wp-block-wj-blocks-hero-carousel .wj-hero-carousel-block-inner .wj-carousel-item-block-container {
+        padding-left: 15px;
+        padding-right: 15px; } }
   .wp-block-wj-blocks-hero-carousel .wj-hero-carousel-block-inner .wj-carousel-item-block .wj-hero-block-inner--bg {
     margin-bottom: -60px; }
   .wp-block-wj-blocks-hero-carousel .wj-hero-carousel-block-inner .wj-carousel-item-block .wj-hero-block {
