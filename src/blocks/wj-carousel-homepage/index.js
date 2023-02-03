@@ -112,18 +112,43 @@ export default registerBlockType('wj-blocks/hero-carousel', {
     },
     save: ({ attributes, className, clientId}) => {
         const { arrows, dots, infinite, speed, autoplay, autoplaySpeed, id } = attributes
+        console.log(arrows)
         const data_slider = {
             slidesPerView: 1,
             slidesToScroll: 1,
             autoplay:autoplay,
             loop: infinite,
             speed:speed,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                type: 'bullets',
+            },
         }
         return (
             <div id={id} className={['wj-hero-carousel-block wj-carousel', className].join(' ')} data-slider={JSON.stringify(data_slider)}>
                 <div className="wj-hero-carousel-block-inner swiper-wrapper">
                     <InnerBlocks.Content />
                 </div>
+
+                {dots ?
+                    <div class="swiper-pagination"></div>
+                    : ''	
+                }
+
+                {arrows ?
+                    <div class="swiper-button-next"></div>
+                    : ""
+                }
+
+                {arrows ?
+                    <div class="swiper-button-prev"></div>
+                    : ""
+                }
             </div>
         )
     }

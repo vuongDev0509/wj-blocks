@@ -13,11 +13,7 @@ const Save = (props) => {
 	
 	return (
 		<div className={['wj-carousel-item-block swiper-slide', className].join(' ')} style={styles}>
-			<div className='wj-carousel-item-block-inner'
-				// style={{
-				// 	backgroundImage: `url(${imgUrl})`,
-				// }}
-			> 
+			<div className='wj-carousel-item-block-inner'> 
 				<div className='wj-carousel-item-block-bg'> 
 					<img src={imgUrl} srcset={srcSet} alt="carousel" style={{ objectPosition: focalPoint ? `${focalPoint.x * 100}% ${focalPoint.y * 100}%` : undefined }}/> </div>
 				<div className='wj-carousel-item-block-container'> 

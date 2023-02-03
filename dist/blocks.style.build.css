@@ -843,9 +843,11 @@ div.wp-block-image:not(.block-editor-block-list__block) {
   padding-top: 0 !important;
   overflow: inherit;
   z-index: 9; }
+  .wp-block-wj-blocks-hero-carousel .wj-carousel-item-block.swiper-slide {
+    cursor: pointer; }
   .wp-block-wj-blocks-hero-carousel .wj-hero-carousel-block-inner .wj-carousel-item-block-bg {
     position: absolute;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     left: 0;
     top: 0; }
@@ -896,3 +898,19 @@ div.wp-block-image:not(.block-editor-block-list__block) {
     @media only screen and (max-width: 767px) {
       .wp-block-wj-blocks-hero-carousel .wj-hero-carousel-block-inner .wj-carousel-item-block .wj-hero-block .wj-hero-block-inner-content__inner {
         width: 100%; } }
+  .wp-block-wj-blocks-hero-carousel .swiper-button-prev, .wp-block-wj-blocks-hero-carousel .swiper-button-next {
+    color: #fff; }
+  .wp-block-wj-blocks-hero-carousel .swiper-pagination .swiper-pagination-bullet {
+    background: #fff;
+    opacity: 0.4; }
+    .wp-block-wj-blocks-hero-carousel .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background: #fff;
+      opacity: 1; }
+  .wp-block-wj-blocks-hero-carousel .wj-hero-block .wj-hero-block-inner--bg img {
+    min-height: 600px; }
+    @media only screen and (min-width: 1600px) {
+      .wp-block-wj-blocks-hero-carousel .wj-hero-block .wj-hero-block-inner--bg img {
+        max-width: 800px; } }
+    @media only screen and (max-width: 767px) {
+      .wp-block-wj-blocks-hero-carousel .wj-hero-block .wj-hero-block-inner--bg img {
+        min-height: auto; } }
