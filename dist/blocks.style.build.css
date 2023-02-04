@@ -832,62 +832,68 @@ div.wp-block-image:not(.block-editor-block-list__block) {
   position: relative; }
   .wj-hero-carousel-block-inner {
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
     @media only screen and (max-width: 767px) {
       .wj-hero-carousel-block-inner {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; } }
     .wj-hero-carousel-block-inner h1, .wj-hero-carousel-block-inner h2, .wj-hero-carousel-block-inner h3 {
       font-family: "miller-banner"; }
-    @media only screen and (max-width: 1199px) {
-      .wj-hero-carousel-block-inner-content {
-        width: 25%; } }
-    @media only screen and (max-width: 1199px) {
-      .wj-hero-carousel-block-inner--bg {
-        width: 75%; } }
-    .wj-hero-carousel-block-inner--bg > img {
-      width: 100%;
-      height: auto;
-      display: none; }
-    .wj-hero-carousel-block-inner--bg-warp {
-      width: 100%;
-      max-width: 100%;
-      overflow: hidden;
-      margin-bottom: -60px; }
-      @media only screen and (max-width: 767px) {
-        .wj-hero-carousel-block-inner--bg-warp {
-          margin-bottom: 0; } }
-    .wj-hero-carousel-block-inner--bg .wj-hero-carousel-block-images {
-      width: 100%;
-      max-width: 100%;
-      position: relative; }
-      .wj-hero-carousel-block-inner--bg .wj-hero-carousel-block-images .swiper-slide--image {
+    .wj-hero-carousel-block-inner-content {
+      width: 50%; }
+      @media only screen and (max-width: 1199px) {
+        .wj-hero-carousel-block-inner-content {
+          width: 25%; } }
+    .wj-hero-carousel-block-inner--bg {
+      width: 50%; }
+      @media only screen and (max-width: 1199px) {
+        .wj-hero-carousel-block-inner--bg {
+          width: 75%; } }
+      .wj-hero-carousel-block-inner--bg > img {
+        width: 100%;
+        height: auto;
+        display: none; }
+      .wj-hero-carousel-block-inner--bg-warp {
         width: 100%;
         max-width: 100%;
-        min-height: 600px;
-        position: relative;
-        cursor: pointer; }
+        overflow: hidden;
+        margin-bottom: -60px; }
         @media only screen and (max-width: 767px) {
-          .wj-hero-carousel-block-inner--bg .wj-hero-carousel-block-images .swiper-slide--image {
-            min-height: 400px; } }
-        .wj-hero-carousel-block-inner--bg .wj-hero-carousel-block-images .swiper-slide--image img {
-          position: absolute;
+          .wj-hero-carousel-block-inner--bg-warp {
+            margin-bottom: 0; } }
+      .wj-hero-carousel-block-inner--bg .wj-hero-carousel-block-images {
+        width: 100%;
+        max-width: 100%;
+        position: relative; }
+        .wj-hero-carousel-block-inner--bg .wj-hero-carousel-block-images .swiper-slide--image {
           width: 100%;
-          height: 100%;
-          left: 0;
-          top: 0;
-          -o-object-fit: cover;
-          object-fit: cover;
-          -o-object-position: center;
-          object-position: center; }
-      .wj-hero-carousel-block-inner--bg .wj-hero-carousel-block-images .swiper-button-prev, .wj-hero-carousel-block-inner--bg .wj-hero-carousel-block-images .swiper-button-next {
-        color: #fff; }
-      .wj-hero-carousel-block-inner--bg .wj-hero-carousel-block-images .swiper-pagination .swiper-pagination-bullet {
-        background: #fff;
-        opacity: 0.4; }
-        .wj-hero-carousel-block-inner--bg .wj-hero-carousel-block-images .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+          max-width: 100%;
+          min-height: 600px;
+          position: relative;
+          cursor: pointer; }
+          @media only screen and (max-width: 767px) {
+            .wj-hero-carousel-block-inner--bg .wj-hero-carousel-block-images .swiper-slide--image {
+              min-height: 400px; } }
+          .wj-hero-carousel-block-inner--bg .wj-hero-carousel-block-images .swiper-slide--image img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            -o-object-fit: cover;
+            object-fit: cover;
+            -o-object-position: center;
+            object-position: center; }
+        .wj-hero-carousel-block-inner--bg .wj-hero-carousel-block-images .swiper-button-prev, .wj-hero-carousel-block-inner--bg .wj-hero-carousel-block-images .swiper-button-next {
+          color: #fff; }
+        .wj-hero-carousel-block-inner--bg .wj-hero-carousel-block-images .swiper-pagination .swiper-pagination-bullet {
           background: #fff;
-          opacity: 1; }
+          opacity: 0.4; }
+          .wj-hero-carousel-block-inner--bg .wj-hero-carousel-block-images .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background: #fff;
+            opacity: 1; }
     .wj-hero-carousel-block-inner-content {
       display: -ms-flexbox;
       display: flex;
