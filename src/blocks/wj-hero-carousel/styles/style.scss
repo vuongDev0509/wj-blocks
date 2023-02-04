@@ -13,14 +13,14 @@
 		&-content{
 			width: 50%;
 			@media only screen and (max-width: 1199px){
-				width: 35%;
+				width: 40%;
 			}			
 		}
 
 		&--bg{
 			width: 50%;
 			@media only screen and (max-width: 1199px){
-				width: 65%;
+				width: 60%;
 			}
 			@media only screen and (max-width: 767px){
 				min-height: 400px;
@@ -94,16 +94,28 @@
 			z-index: 99;
 			&__inner{
 				margin-left: -10%;
+				@media only screen and (max-width: 767px){
+					margin-left: 0;
+					text-align: center;
+				}
 				h1.heading{
 					max-width: 385px;
 					line-height: 90%;
 					margin-left: -10%;
 					margin-top: 0;
 					margin-bottom: 0;
+					@media only screen and (max-width: 1199px){
+						max-width: 350px;
+					}
+					@media only screen and (max-width: 1199px){
+						max-width: 340px;
+					}
 					@media only screen and (max-width: 767px){
 						max-width: 290px;
 						margin: 0 auto;
 						display: inline-block;
+						text-align: center;
+						line-height: 110%;
 					}
 				}
 			}
