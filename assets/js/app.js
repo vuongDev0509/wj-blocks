@@ -2,7 +2,6 @@
 jQuery(function ($) {
 	"use strict";
 
-	
 	const WjImageCarousel = () => {
 		const $isBlock = $('.wj-carousel');
 		if (!$isBlock.length) return;
@@ -15,7 +14,6 @@ jQuery(function ($) {
 		} );
 
 		function loadSlider($id, $data){
-			console.log($id)
 			const swiper = new Swiper(`#${$id}`, $data);
 		}
 	}

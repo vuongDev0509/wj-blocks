@@ -828,89 +828,64 @@ div.wp-block-image:not(.block-editor-block-list__block) {
   margin-right: calc(-50vw + 50%);
   max-width: 100vw; }
 
-.wp-block-wj-blocks-hero-carousel {
-  width: 100vw;
-  margin-left: 50% !important;
-  -ms-transform: translateX(-50%) !important;
-      transform: translateX(-50%) !important;
-  -webkit-transform: translateX(-50%) !important;
-  position: relative;
-  overflow: hidden;
-  max-width: 100% !important;
-  margin-bottom: 0 !important;
-  margin-top: 0 !important;
-  padding-bottom: 0 !important;
-  padding-top: 0 !important;
-  overflow: inherit;
-  z-index: 9; }
-  .wp-block-wj-blocks-hero-carousel .wj-carousel-item-block.swiper-slide {
-    cursor: pointer; }
-  .wp-block-wj-blocks-hero-carousel .wj-hero-carousel-block-inner .wj-carousel-item-block-bg {
-    position: absolute;
-    width: 100vw;
-    height: 100%;
-    left: 0;
-    top: 0; }
-    .wp-block-wj-blocks-hero-carousel .wj-hero-carousel-block-inner .wj-carousel-item-block-bg img {
-      position: absolute;
+.wj-hero-carousel-block {
+  position: relative; }
+  .wj-hero-carousel-block-inner {
+    display: -ms-flexbox;
+    display: flex; }
+    .wj-hero-carousel-block-inner h1, .wj-hero-carousel-block-inner h2, .wj-hero-carousel-block-inner h3 {
+      font-family: "miller-banner"; }
+    .wj-hero-carousel-block-inner--bg, .wj-hero-carousel-block-inner-content {
+      width: 50%; }
+    .wj-hero-carousel-block-inner--bg > img {
       width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      -o-object-fit: cover;
-         object-fit: cover;
-      -o-object-position: center;
-         object-position: center; }
-  .wp-block-wj-blocks-hero-carousel .wj-hero-carousel-block-inner .wj-carousel-item-block .wj-carousel-item-block-inner {
-    width: 100%;
-    height: auto;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-left: -1px; }
-  .wp-block-wj-blocks-hero-carousel .wj-hero-carousel-block-inner .wj-carousel-item-block-container {
-    max-width: 100%;
-    width: 100%;
-    padding-right: 5%;
-    display: table-cell;
-    padding-left: 10%; }
-    @media only screen and (max-width: 1359px) {
-      .wp-block-wj-blocks-hero-carousel .wj-hero-carousel-block-inner .wj-carousel-item-block-container {
-        padding-left: 6%;
-        padding-right: 3%; } }
-    @media only screen and (max-width: 1359px) {
-      .wp-block-wj-blocks-hero-carousel .wj-hero-carousel-block-inner .wj-carousel-item-block-container {
-        padding-left: 15px;
-        padding-right: 15px; } }
-  .wp-block-wj-blocks-hero-carousel .wj-hero-carousel-block-inner .wj-carousel-item-block .wj-hero-block-inner--bg {
-    margin-bottom: -60px; }
-  .wp-block-wj-blocks-hero-carousel .wj-hero-carousel-block-inner .wj-carousel-item-block .wj-hero-block {
-    overflow: inherit; }
-    @media only screen and (max-width: 767px) {
-      .wp-block-wj-blocks-hero-carousel .wj-hero-carousel-block-inner .wj-carousel-item-block .wj-hero-block .wj-hero-block-inner--bg {
+      height: auto;
+      display: none; }
+    .wj-hero-carousel-block-inner--bg-warp {
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden; }
+    .wj-hero-carousel-block-inner--bg .wj-hero-carousel-block-images {
+      width: 100%;
+      max-width: 100%;
+      position: relative; }
+      .wj-hero-carousel-block-inner--bg .wj-hero-carousel-block-images .swiper-slide--image {
         width: 100%;
-        margin: 0; } }
-    @media only screen and (max-width: 767px) {
-      .wp-block-wj-blocks-hero-carousel .wj-hero-carousel-block-inner .wj-carousel-item-block .wj-hero-block .wj-hero-block-inner-content__inner h1 {
-        margin-left: auto !important;
-        margin-right: auto !important;
-        max-width: 280px !important; } }
-    @media only screen and (max-width: 767px) {
-      .wp-block-wj-blocks-hero-carousel .wj-hero-carousel-block-inner .wj-carousel-item-block .wj-hero-block .wj-hero-block-inner-content__inner {
-        width: 100%; } }
-  .wp-block-wj-blocks-hero-carousel .swiper-button-prev, .wp-block-wj-blocks-hero-carousel .swiper-button-next {
-    color: #fff; }
-  .wp-block-wj-blocks-hero-carousel .swiper-pagination .swiper-pagination-bullet {
-    background: #fff;
-    opacity: 0.4; }
-    .wp-block-wj-blocks-hero-carousel .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-      background: #fff;
-      opacity: 1; }
-  .wp-block-wj-blocks-hero-carousel .wj-hero-block .wj-hero-block-inner--bg img {
-    min-height: 600px; }
-    @media only screen and (min-width: 1600px) {
-      .wp-block-wj-blocks-hero-carousel .wj-hero-block .wj-hero-block-inner--bg img {
-        max-width: 800px; } }
-    @media only screen and (max-width: 767px) {
-      .wp-block-wj-blocks-hero-carousel .wj-hero-block .wj-hero-block-inner--bg img {
-        min-height: auto; } }
+        max-width: 100%;
+        min-height: 600px;
+        position: relative;
+        cursor: pointer; }
+        .wj-hero-carousel-block-inner--bg .wj-hero-carousel-block-images .swiper-slide--image img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          -o-object-fit: cover;
+          object-fit: cover;
+          -o-object-position: center;
+          object-position: center; }
+      .wj-hero-carousel-block-inner--bg .wj-hero-carousel-block-images .swiper-button-prev, .wj-hero-carousel-block-inner--bg .wj-hero-carousel-block-images .swiper-button-next {
+        color: #fff; }
+      .wj-hero-carousel-block-inner--bg .wj-hero-carousel-block-images .swiper-pagination .swiper-pagination-bullet {
+        background: #fff;
+        opacity: 0.4; }
+        .wj-hero-carousel-block-inner--bg .wj-hero-carousel-block-images .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+          background: #fff;
+          opacity: 1; }
+    .wj-hero-carousel-block-inner-content {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+      z-index: 99; }
+      .wj-hero-carousel-block-inner-content__inner {
+        margin-left: -10%; }
+        .wj-hero-carousel-block-inner-content__inner h1.heading {
+          max-width: 375px;
+          line-height: 120%;
+          margin-left: -10%; }

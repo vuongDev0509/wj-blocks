@@ -1,0 +1,20 @@
+.wj-hero-carousel-block {
+    &-inner {
+        &--bg{
+            box-sizing: border-box;
+            &.block-edit{
+                .wj-hero-carousel-block-images{
+                    .wj-images-sliders-wrapper{
+                        display: flex;
+                        overflow: auto;
+                        > .swiper-slide {
+                            width: 90%;
+                            min-width: 90%;
+                            margin-right: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

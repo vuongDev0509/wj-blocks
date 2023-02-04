@@ -49,7 +49,7 @@ const Save = (props) => {
 				
 			>
 				{imgUrl.map((value, index) => (
-					<div class="swiper-slide item" key={index}> 
+					<div className="swiper-slide item" key={index}> 
 						<img src={value} alt="image" />
 					</div>
 				))}
