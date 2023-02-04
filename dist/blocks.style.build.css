@@ -921,7 +921,8 @@ div.wp-block-image:not(.block-editor-block-list__block) {
           margin-bottom: 0; }
           @media only screen and (max-width: 1199px) {
             .wj-hero-carousel-block-inner-content__inner h1.heading {
-              max-width: 350px; } }
+              max-width: 355px;
+              line-height: 110%; } }
           @media only screen and (max-width: 1199px) {
             .wj-hero-carousel-block-inner-content__inner h1.heading {
               max-width: 340px; } }
@@ -932,6 +933,10 @@ div.wp-block-image:not(.block-editor-block-list__block) {
               display: inline-block;
               text-align: center;
               line-height: 110%; } }
+        .wj-hero-carousel-block-inner-content__inner h4 {
+          font-family: 'Karla';
+          margin-top: 0;
+          margin-bottom: 0; }
     @media only screen and (max-width: 767px) {
       .wj-hero-carousel-block-inner--bg, .wj-hero-carousel-block-inner-content {
         width: 100%; } }

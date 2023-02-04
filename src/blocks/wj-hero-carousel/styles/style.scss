@@ -105,7 +105,8 @@
 					margin-top: 0;
 					margin-bottom: 0;
 					@media only screen and (max-width: 1199px){
-						max-width: 350px;
+						max-width: 355px;
+						line-height: 110%;
 					}
 					@media only screen and (max-width: 1199px){
 						max-width: 340px;
@@ -117,6 +118,12 @@
 						text-align: center;
 						line-height: 110%;
 					}
+				}
+
+				h4{
+					font-family: 'Karla';
+					margin-top: 0;
+					margin-bottom: 0;
 				}
 			}
 		}
