@@ -13,14 +13,17 @@
 		&-content{
 			width: 50%;
 			@media only screen and (max-width: 1199px){
-				width: 25%;
+				width: 35%;
 			}			
 		}
 
 		&--bg{
 			width: 50%;
 			@media only screen and (max-width: 1199px){
-				width: 75%;
+				width: 65%;
+			}
+			@media only screen and (max-width: 767px){
+				min-height: 400px;
 			}
 			> img{
 				width: 100%;
@@ -97,6 +100,11 @@
 					margin-left: -10%;
 					margin-top: 0;
 					margin-bottom: 0;
+					@media only screen and (max-width: 767px){
+						max-width: 290px;
+						margin: 0 auto;
+						display: inline-block;
+					}
 				}
 			}
 		}
