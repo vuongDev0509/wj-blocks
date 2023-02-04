@@ -833,10 +833,18 @@ div.wp-block-image:not(.block-editor-block-list__block) {
   .wj-hero-carousel-block-inner {
     display: -ms-flexbox;
     display: flex; }
+    @media only screen and (max-width: 767px) {
+      .wj-hero-carousel-block-inner {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
     .wj-hero-carousel-block-inner h1, .wj-hero-carousel-block-inner h2, .wj-hero-carousel-block-inner h3 {
       font-family: "miller-banner"; }
-    .wj-hero-carousel-block-inner--bg, .wj-hero-carousel-block-inner-content {
-      width: 50%; }
+    @media only screen and (max-width: 1199px) {
+      .wj-hero-carousel-block-inner-content {
+        width: 25%; } }
+    @media only screen and (max-width: 1199px) {
+      .wj-hero-carousel-block-inner--bg {
+        width: 75%; } }
     .wj-hero-carousel-block-inner--bg > img {
       width: 100%;
       height: auto;
@@ -844,7 +852,11 @@ div.wp-block-image:not(.block-editor-block-list__block) {
     .wj-hero-carousel-block-inner--bg-warp {
       width: 100%;
       max-width: 100%;
-      overflow: hidden; }
+      overflow: hidden;
+      margin-bottom: -60px; }
+      @media only screen and (max-width: 767px) {
+        .wj-hero-carousel-block-inner--bg-warp {
+          margin-bottom: 0; } }
     .wj-hero-carousel-block-inner--bg .wj-hero-carousel-block-images {
       width: 100%;
       max-width: 100%;
@@ -855,6 +867,9 @@ div.wp-block-image:not(.block-editor-block-list__block) {
         min-height: 600px;
         position: relative;
         cursor: pointer; }
+        @media only screen and (max-width: 767px) {
+          .wj-hero-carousel-block-inner--bg .wj-hero-carousel-block-images .swiper-slide--image {
+            min-height: 400px; } }
         .wj-hero-carousel-block-inner--bg .wj-hero-carousel-block-images .swiper-slide--image img {
           position: absolute;
           width: 100%;
@@ -886,6 +901,11 @@ div.wp-block-image:not(.block-editor-block-list__block) {
       .wj-hero-carousel-block-inner-content__inner {
         margin-left: -10%; }
         .wj-hero-carousel-block-inner-content__inner h1.heading {
-          max-width: 375px;
-          line-height: 120%;
-          margin-left: -10%; }
+          max-width: 385px;
+          line-height: 90%;
+          margin-left: -10%;
+          margin-top: 0;
+          margin-bottom: 0; }
+    @media only screen and (max-width: 767px) {
+      .wj-hero-carousel-block-inner--bg, .wj-hero-carousel-block-inner-content {
+        width: 100%; } }

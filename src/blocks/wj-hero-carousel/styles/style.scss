@@ -2,14 +2,23 @@
 	position: relative;
 	&-inner {
 		display: flex;
+		@media only screen and (max-width: 767px){
+			flex-wrap: wrap;
+		}
 		h1, h2, h3{
 			font-family: $font_primary;
 		}
-		&--bg, &-content{
-			width: 50%;
+
+		&-content{
+			@media only screen and (max-width: 1199px){
+				width: 25%;
+			}			
 		}
 
 		&--bg{
+			@media only screen and (max-width: 1199px){
+				width: 75%;
+			}
 			> img{
 				width: 100%;
 				height: auto;
@@ -20,6 +29,10 @@
 				width: 100%;
 				max-width: 100%;
 				overflow: hidden;
+				margin-bottom: -60px;
+				@media only screen and (max-width: 767px){
+					margin-bottom: 0;
+				}
 			}
 
 			.wj-hero-carousel-block-images{
@@ -33,6 +46,9 @@
 						min-height: 600px;
 						position: relative;
 						cursor: pointer;
+						@media only screen and (max-width: 767px){
+							min-height: 400px;
+						}
 						img{
 							position: absolute;
 							width: 100%;
@@ -73,10 +89,19 @@
 			&__inner{
 				margin-left: -10%;
 				h1.heading{
-					max-width: 375px;
-					line-height: 120%;
+					max-width: 385px;
+					line-height: 90%;
 					margin-left: -10%;
+					margin-top: 0;
+					margin-bottom: 0;
 				}
+			}
+		}
+
+		
+		&--bg, &-content{
+			@media only screen and (max-width: 767px){
+				width: 100%;
 			}
 		}
 		
